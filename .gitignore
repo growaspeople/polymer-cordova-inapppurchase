@@ -1,0 +1,11 @@
+# OS
+Thumbs.db
+.DS_Store
+.directory
+
+#JavaScript
+bower_components/
+
+# Cordova
+demo/platforms/
+demo/plugins/

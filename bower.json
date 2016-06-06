@@ -1,0 +1,18 @@
+{
+  "name": "polymer-cordova-inapppurchase",
+  "description": "In-App purchase button for Apache Cordova / Adobe PhoneGap",
+  "homepage": "https://github.com/phanect/polymer-cordova-inapppurchase",
+  "authors": [
+    { "name": "Jumpei Ogawa", "email": "ogawa@growaspeople.org" },
+    { "name": "GrowAsPeople", "homepage": "http://growaspeople.org" }
+  ],
+  "license": "ISC",
+  "main": "inapp-purchase.js",
+  "dependencies": {
+    "polymer": "1.4.x"
+  },
+  "devDependencies": {
+    "web-component-tester": "4.x",
+    "webcomponentsjs": "0.7.x"
+  }
+}
