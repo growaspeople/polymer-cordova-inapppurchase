@@ -1,0 +1,13 @@
+{
+  "name": "polymer-cordova-inapppurchase-demo",
+  "description": "Demo app for polymer-cordova-inapppurchase",
+  "homepage": "https://github.com/phanect/polymer-cordova-inapppurchase",
+  "authors": [
+    { "name": "Jumpei Ogawa", "email": "ogawa@growaspeople.org" },
+    { "name": "GrowAsPeople", "homepage": "http://growaspeople.org" }
+  ],
+  "license": "CC0-1.0",
+  "dependencies": {
+    "polymer-cordova-inapppurchase": "latest"
+  }
+}
