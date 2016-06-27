@@ -46,8 +46,8 @@ Polymer({
 
     self.toggleClass("disabled", true);
 
-    inAppPurchase.subscribe(self.productid).then(function(data) {
-      alert("Subscription succeed: " + JSON.stringify(data));
+    inAppPurchase.subscribe(self.productid).then(function(result) {
+      self.fire("paid", { result: result });
 
       if (self.onSuccessUrl) {
         location.href = self.onSuccessUrl;
