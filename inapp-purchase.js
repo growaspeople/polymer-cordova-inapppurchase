@@ -5,6 +5,11 @@ Polymer({
   extends: "button",
   properties: {
     productid: String,
+    subscription: {
+        type: Boolean,
+        value: false
+    },
+
     // Redirect URL after user successfully buy/subscribe the product
     onSuccessUrl: String
   },
@@ -46,7 +51,7 @@ Polymer({
 
     self.toggleClass("disabled", true);
 
-    inAppPurchase.subscribe(self.productid).then(function(result) {
+    (self.subscription ? inAppPurchase.subscribe(self.productid) : inAppPurchase.buy(self.productid)).then(function(result) {
       self.fire("paid", { result: result });
 
       if (self.onSuccessUrl) {

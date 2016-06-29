@@ -19,8 +19,7 @@ $ bower install polymer-cordova-inapppurchase
   </head>
   <body>
     <button is="inapp-purchase" productid="product_id">Buy</button>
+    <button is="inapp-purchase" productid="subscription_id" subscription="true">Subscribe</button>
   </body>
 </html>
 ```
-
-**Warning** Currently this component only works for subscription.

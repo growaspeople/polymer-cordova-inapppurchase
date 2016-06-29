@@ -10,7 +10,8 @@
     <title>Hello In-app Billing</title>
   </head>
   <body>
-    <button is="inapp-purchase" productid="product_id">登録</button>
+    <button is="inapp-purchase" productid="product_id">Buy</button>
+    <button is="inapp-purchase" productid="subscription_id" subscription="true">Subscribe</button>
 
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="bower_components/polymer-cordova-inapppurchase/inapp-purchase.js"></script>
