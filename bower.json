@@ -9,10 +9,6 @@
   "license": "ISC",
   "main": "inapp-purchase.js",
   "dependencies": {
-    "polymer": "1.4.x"
-  },
-  "devDependencies": {
-    "web-component-tester": "4.x",
-    "webcomponentsjs": "0.7.x"
+    "polymer": "1.6.x"
   }
 }
