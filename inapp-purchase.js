@@ -27,7 +27,7 @@ document.addEventListener("WebComponentsReady", function() {
             return Promise.reject("product_empty");
           }
 
-          alert("Product info received: " + JSON.stringify(products));
+          // DEBUG: alert("Product info received: " + JSON.stringify(products));
         }).catch(function (err) {
           if (err.message === "product_id_undefined") {
             console.error(JSON.stringify(err));
@@ -39,7 +39,7 @@ document.addEventListener("WebComponentsReady", function() {
             alert("申し訳ありません。ストアの処理に問題が発生しています。");
           }
 
-          alert("ERROR on product receive: " + JSON.stringify(err));
+          alert("申し訳ありません。不明なエラーが発生しました。" /* DEBUG: + JSON.stringify(err) */ );
           self.toggleClass("disabled", true);
         });
       });
@@ -60,11 +60,11 @@ document.addEventListener("WebComponentsReady", function() {
         }
       }).catch(function(err) {
         if (err.code === -5 && err.response === -1005) { // Cancelled
-          alert("Cancelled");
+          alert("キャンセルされました。");
           self.toggleClass("disabled", false);
         }
 
-        alert("ERROR on subscription: " + JSON.stringify(err));
+        // DEBUG: alert("ERROR on subscription: " + JSON.stringify(err));
       });
     }
   });
